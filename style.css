@@ -91,15 +91,27 @@ body {
 
 .filters {
   display: flex;
-  gap: 10px;
-  padding: 20px;
   flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.filters input,
+.filters select,
+.filters .range-slider {
+  flex: 1 1 22%; /* Adjusts size to fit nicely */
+  min-width: 180px;
 }
 
 .range-slider {
   display: flex;
   flex-direction: column;
 }
+
 .job-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
